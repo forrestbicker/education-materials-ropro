@@ -1,5 +1,7 @@
 # FRC Robotics Programming Education Materials
 
+`Authored by Forrest Bicker & Eric Cao`
+
 Lesson plans for a series of FRC programming classes
 
 ## Lesson 1 - Environment setup & WPI lib
