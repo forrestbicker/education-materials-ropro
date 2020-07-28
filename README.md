@@ -1,6 +1,6 @@
 # FRC Robotics Programming Education Materials
 
-Lesson plans consisting of educational resources and code snippets for the teaching of a series of FRC programming classes
+Lesson plans for a series of FRC programming classes
 
 ## Lesson 1 - Environment setup & WPI lib
 ## Lesson 2 - User Input & Controls
