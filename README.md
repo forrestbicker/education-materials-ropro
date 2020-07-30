@@ -5,6 +5,7 @@
 Lesson plans for a series of FRC programming classes
 
 ## Lesson 1 - Environment setup & WPI lib
+Get your environment set up for work with the robot code and the materials we add to this github!
 
 ## Lesson 2 - User Input & Controls
 
