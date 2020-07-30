@@ -1,0 +1,1 @@
+Read java21.pdf to familiarize yourself with java syntax if you are familiar with other programming languages & OOP concepts
