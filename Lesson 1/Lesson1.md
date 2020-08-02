@@ -11,6 +11,13 @@
 7. Clone the files from `https://github.com/RoHawks/BaseRobotCode` onto your machine. VS Code has good support for Git so you can use their git clone command.
    NOTE) If you are unfamiliar with git or VS Code's environment, email Eric or me when you are free so I can walk you through both downloading the code and making your own changes to it. WPILib docs including a complete installation guide can be referenced at any time at `https://docs.wpilib.org/en/stable/`
 
+## Driver Station
+- Enable / Disable button
+- Upload robot code
+- Console output
+- Input tracing
+- 
+
 ## Robot Archetypes
 
 -   TimedRobot
@@ -25,13 +32,13 @@
 
 Reference: `https://docs.wpilib.org/en/stable/docs/software/wpilib-overview/creating-robot-program.html#creating-a-robot-program`
 
-## Our Code
+### Archetype applications in our code
 
-### Main.java
+#### Main.java
 
 -   Our Main class doesn't contain much on its own: its sole purpose is to call the RobotBase's "startRobot" method.
 
-### Robot.java
+#### Robot.java
 
 -   Robot.java outlines three methods that correspond to the beginning of the game, the autonomous period, and the teleoperated period.
 -   startGame():
