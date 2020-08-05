@@ -1,10 +1,4 @@
-/*
- * This is our Robot.java! (At least, a part of it.) There are three methods here that: 1.
- * Initialize and (reset?) the positions for the pneumatics, intake, and leadscrews 2. Begin the
- * autonomous loop of the robot, which is activated for the first few seconds of competition where
- * human players do not control the robot 3. Begin the teleoperated loop of the robot, which is
- * activated when humans begin to pick up their controllers to move the robot manually.
- */
+
 public class Robot extends SampleRobot {
 
 	private void runLift() {
