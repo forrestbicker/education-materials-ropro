@@ -8,6 +8,7 @@ Lesson plans for a series of FRC programming classes
 Get your environment set up for work with the robot code and the materials we add to this github!
 
 ## Lesson 2 - User Input & Controls
+Learn how to detect user input with the XboxController and use them to operate mechanisms
 
 ## Lesson 3 - Things that spin: Motors & Encoders
 
