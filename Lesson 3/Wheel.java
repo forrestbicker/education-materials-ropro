@@ -21,24 +21,32 @@ public class Wheel {
 		mEncoder = pEncoder;
 	}
 
-	/**
-	 * Set wheel angle & speed
-	 * 
-	 * @param pWheelVelocity Vector of wheel velocity
-	 */
-	public void set(Vector pWheelVelocity) {
-		set(pWheelVelocity.getAngle(), pWheelVelocity.getMagnitude());
+    private void TalonPID(double pTarget) {
+		double current = ResourceFunctions.tickToAngle(mTurn.getSelectedSensorPosition(0));
+		double realCurrent = mEncoder.getAngleDegrees();
+
+		double error = ResourceFunctions.continuousAngleDif(pTarget, ResourceFunctions.putAngleInRange(realCurrent));
+
+		if (Math.abs(error) > 90) {
+			mEncoder.setAdd180(!mEncoder.getAdd180());
+			mDrive.setInverted(!mDrive.getInverted());
+			error = ResourceFunctions.continuousAngleDif(pTarget, realCurrent);
+		}
+		mTurn.set(ControlMode.Position, ResourceFunctions.angleToTick(current + error));
 	}
 
-	/**
-	 * Set wheel angle & speed
-	 * 
-	 * @param angle direction to point the wheel
-	 * @param speed magnitude to drive the wheel
-	 */
-	public void set(double angle, double speed) {
-		setAngle(angle);
-		setLinearVelocity(speed);
+	private void TalonMotionMagic(double pTarget) { // Have to set velocity, acceleration, and PIDF constants
+		double current = ResourceFunctions.tickToAngle(mTurn.getSelectedSensorPosition(0));
+		double realCurrent = mEncoder.getAngleDegrees();
+
+		double error = ResourceFunctions.continuousAngleDif(pTarget, ResourceFunctions.putAngleInRange(realCurrent));
+
+		if (Math.abs(error) > 90) {
+			mEncoder.setAdd180(!mEncoder.getAdd180());
+			mDrive.setInverted(!mDrive.getInverted());
+			error = ResourceFunctions.continuousAngleDif(pTarget, realCurrent);
+		}
+		mTurn.set(ControlMode.MotionMagic, ResourceFunctions.angleToTick(current + error));
 	}
 
 	public void setLinearVelocity(double pSpeed) {
@@ -53,10 +61,4 @@ public class Wheel {
 
 	public double getAngle() {
 		return mEncoder.getAngleDegrees();
-	}
-
-	public boolean isInRange(double pTarget) {
-		double realCurrent = mEncoder.getAngleDegrees();
-		double error = ResourceFunctions.continuousAngleDif(pTarget, ResourceFunctions.putAngleInRange(realCurrent));
-		return Math.abs(error) < DriveConstants.ActualRobot.ROTATION_TOLERANCE[0];
 	}
