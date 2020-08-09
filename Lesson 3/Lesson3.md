@@ -7,6 +7,6 @@ In order to control the way each individual motor moves in our robot, we use mot
 - The latter two controllers mentioned above also have the capability of being motor encoders, which take information from the motors, such as the velocity at which they're spinning at or their position. 
 
 ## Wheel.java
-- In Wheel.java, we showcase code that uses an encoder to take information about the angle of the motor via the getAngle() method. We also see instructions being sent to the SPARK and Talon motors to move them around and change the speed at which they are moving. (The calculations needed to determine how much voltage is supplied has already been built into the motor libraries.)
+- In Wheel.java, we showcase code that uses an encoder to take information about the angle of the motor via the getAngle() method. We also see instructions being sent to the SPARK and Talon motors to move them around and change the speed at which they are moving. (The calculations needed to determine how much voltage is supplied has already been built into the motor libraries.
 
 
