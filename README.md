@@ -11,6 +11,7 @@ Get your environment set up for work with the robot code and the materials we ad
 Learn how to detect user input with the XboxController and use them to operate mechanisms
 
 ## Lesson 3 - Things that spin: Motors & Encoders
+Check out the systems that control our motors and the ones that grab motor information for later use
 
 ## Lesson 4 - Things that spin: Servos & PID
 
