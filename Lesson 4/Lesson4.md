@@ -8,3 +8,4 @@
 
 - The PID system, (Proportional, Integral, Derivative) is another feedback loop that ensures everything is working in order and correct error in motor turning.
     - It revolves around finding constants that multiply by the error, its integral, and its derivative to minimize the amount of time this takes and the number of oscillations in voltage it needs to make before settling at a constant amount fed.
+- For PID, we implement "feedforward", which aims to predict what the needed correction will need to be at each step to lower the downtime dedicated to calculations.
