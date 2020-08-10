@@ -4,6 +4,7 @@
 
 - A servo is a mechanical system that utilizes a certain type of motor that not only takes in commands from the code but also returns feedback about the motor position so error can be accounted for. All in all, it allows for very precise movement while resisting external force applied to the motor.
 - You can think of a servo as just a simple motor used for percision rather than speed. Because of this it is often used for targeting shooting mechanisms or aligning the robot for routines that require near-perfect positioning i.e. climbing
+- Servos also run off the PWM so they're less resource intensive
 
 ## PID?
 
