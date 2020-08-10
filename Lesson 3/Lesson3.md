@@ -28,6 +28,8 @@ In order to control the way each individual motor moves in our robot, we use mot
             |—> Velocity
                 |—> getVelocity()
                 |—> setVelocity()
+Motors with encoders can measure their position in "ticks" a unit of rotation similar to degrees. The number of ticks in a full rotation depends on the motor, falcons use 2048, talons use 4096, sparks use 1. We can take the 360 * (ticks % ticksPerRotation) / ticksPerRotation = angle in degrees.
+
 
 ## Wheel.java
 - In Wheel.java, we showcase code that uses an encoder to take information about the angle of the motor via the getAngle() method. We also see instructions being sent to the SPARK and Talon motors to move them around and change the speed at which they are moving. (The calculations needed to determine how much voltage is supplied has already been built into the motor libraries.
