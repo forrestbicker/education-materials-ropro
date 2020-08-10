@@ -6,6 +6,29 @@ In order to control the way each individual motor moves in our robot, we use mot
 - Motor controllers take signals from our main RoboRIO chip and feed voltage to the motors, which speeds them up or slows them down. 
 - The latter two controllers mentioned above also have the capability of being motor encoders, which take information from the motors, such as the velocity at which they're spinning at or their position. 
 
+## Motors and Encoders Hierarchy
+|—>Wheel
+    |—> DriveMotor
+        |—> Motor 
+            |—> setOutput()
+    |—> TurnMotor
+        |—> Motor 
+            |—> setOutput()
+        |—> Encoder
+            |—> Angle
+                |—> getReversed()
+                |—> setReversed()
+                |—> getRawAngle()
+                |—> setRawAngle()
+                |—> getAngle()
+                |—> setAngle()
+            |—> Position
+                |—> getPosition()
+                |—> setPosition()
+            |—> Velocity
+                |—> getVelocity()
+                |—> setVelocity()
+
 ## Wheel.java
 - In Wheel.java, we showcase code that uses an encoder to take information about the angle of the motor via the getAngle() method. We also see instructions being sent to the SPARK and Talon motors to move them around and change the speed at which they are moving. (The calculations needed to determine how much voltage is supplied has already been built into the motor libraries.
 
