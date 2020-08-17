@@ -11,3 +11,7 @@
 ## Uses!
 - Shooting: Although we don't currently use pneumatics for shooting, using compressed air pistons can be a very effective way to shoot balls from our robot.
 - Climbing: Because of the high force that pneumatics can exert, pneumatics works perfectly for raising the robot into the air and grappling onto the climbing stations. 
+
+
+# Resources:
+- FRC Pneumatics Manual: https://firstfrc.blob.core.windows.net/frc2017/pneumatics-manual.pdf
