@@ -14,11 +14,15 @@ Learn how to detect user input with the XboxController and use them to operate m
 Check out the systems that control our motors and the ones that grab motor information for later use
 
 ## Lesson 4 - Things that spin: Servos & PID
+Reveal the technical secret behind all things that spin: PID control
 
 ## Lesson 5 - Gyroscopes & Limelights
+Discover the sensory devices that let our robot understand the outside world and why they're so important
 
 ## Lesson 6 - Compressors & Solenoids
 
 ## Lesson 7 - Logging & Debugging
+Troubleshoot problems and identify issues with proactive and retroactive logging and debugging skills
 
 ## Lesson 8 - An exploration in swerve
+It's time to try out your skills in a real world example, take a look at some of our existing code, try to understand it and find some bugs in the code
