@@ -2,7 +2,7 @@
 
 `Authored by Forrest Bicker & Eric Cao`
 
-Lesson plans for a series of FRC programming classes
+Advanced Java for Robotic Engineering: A Guide to FRC Programming. In this class you will use the WPILib Suite to learn how to connect code to hardware, including motors, pneumatics, sensors, and more! We will also cover practical technical skills including environment setup, logging, debugging, and firmware. Students are recommended to be familiar with basic programming fundamentals in any language, though prior experience is not required.
 
 ## Lesson 1 - Environment setup & WPI lib
 Get your environment set up for work with the robot code and the materials we add to this github!
